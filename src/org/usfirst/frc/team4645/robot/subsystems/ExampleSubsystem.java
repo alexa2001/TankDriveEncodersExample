@@ -10,7 +10,7 @@ public class ExampleSubsystem extends Subsystem {
 	// Put methods for controlling this subsystem
 	// here. Call these from Commands.
 	
-	Encoder sampleEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+	
 
 	public void initDefaultCommand() {
 		// Set the default command for a subsystem here.
@@ -22,7 +22,11 @@ public class ExampleSubsystem extends Subsystem {
 		RobotDrive rb = new RobotDrive(motorFL, motorFR, motorBL, motorBR);
 
 		Joystick joy1 = new Joystick(RobotMap.joystick1) ; 
-		Joystick joy2 = new Joystick(RobotMap.joystick2) ;		
+		Joystick joy2 = new Joystick(RobotMap.joystick2) ;
+		
+		Encoder leftEncoder = new Encoder(RobotMap.LEFT_ENCODER_1,RobotMap.LEFT_ENCODER_2 , false, Encoder.EncodingType.k4X);
+		Encoder rightEncoder = new Encoder(RobotMap.RIGHT_ENCODER_1,RobotMap.RIGHT_ENCODER_2 , false, Encoder.EncodingType.k4X);
+		
 		setDefaultCommand(new ExampleCommand());
 	}
 }
