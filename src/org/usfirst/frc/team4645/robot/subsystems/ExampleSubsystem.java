@@ -14,6 +14,15 @@ public class ExampleSubsystem extends Subsystem {
 
 	public void initDefaultCommand() {
 		// Set the default command for a subsystem here.
+
+		public static TalonSRX motorFL = new TalonSRX(RobotMap.frontLeft);
+		public static TalonSRX motorFR = new TalonSRX(RobotMap.frontRight);
+		public static TalonSRX motorBR = new TalonSRX(RobotMap.backLeft);
+		public static TalonSRX motorBL = new TalonSRX(RobotMap.backRight);
+		RobotDrive rb = new RobotDrive(motorFL, motorFR, motorBL, motorBR);
+
+		Joystick joy1 = new Joystick(RobotMap.joystick1) ; 
+		Joystick joy2 = new Joystick(RobotMap.joystick2) ;		
 		setDefaultCommand(new ExampleCommand());
 	}
 }
