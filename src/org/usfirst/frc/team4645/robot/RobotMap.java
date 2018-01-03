@@ -28,12 +28,12 @@ public class RobotMap {
 	
 	/* Left encoder Digital I/O ports.
 	 */
-	public static final int LEFT_ENCODER_1 = 2;
-	public static final int LEFT_ENCODER_2 = 3;
+	public static final int LEFT_ENCODER_1 = 1;
+	public static final int LEFT_ENCODER_2 = 2;
 	/**
 	* Right encoder Digital I/O ports.
 	*/
-	public static final int RIGHT_ENCODER_1 = 4;
-	public static final int RIGHT_ENCODER_2 = 5;	
+	public static final int RIGHT_ENCODER_1 = 3;
+	public static final int RIGHT_ENCODER_2 = 4;	
 
 }
