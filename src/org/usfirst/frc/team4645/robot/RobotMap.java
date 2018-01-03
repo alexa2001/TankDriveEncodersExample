@@ -17,9 +17,13 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	
-	public static final int LEFT_JOYSTICK_USB_PORT_0 = 0;
-	public static final int RIGHT_JOYSTICK_USB_PORT_1 = 1;
+
+	public static int frontLeft = 1;
+	public static int frontRight = 2;
+	public static int backLeft = 3;
+	public static int backRight = 4;
+
+	public static int joystick1 = 1;
+	public static int joystick2= 2;
 	
-	public static int DRIVETRAIN_VICTOR_LEFT = 0;
-	public static int DRIVETRAIN_VICTOR_RIGHT = 1;
 }
